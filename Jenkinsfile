@@ -1,6 +1,7 @@
 node {
     stage('CleanWorkspace') {
-        sh 'rm -rf *'
+        cleanWs()
+        //sh 'rm -rf *'
     }
     stage('Clone'){
         sh 'git clone git@github.com:lijoabraham44/nodejs-test.git'
