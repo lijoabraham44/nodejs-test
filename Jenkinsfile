@@ -1,6 +1,6 @@
 node {
     stage('Build') {
-        sh '/usr/local/bin/docker build --tag latest .'
+        sh '/usr/local/bin/docker build .'
     }
     stage('Test') {
         echo 'Building....'
