@@ -6,8 +6,7 @@ node {
         sh 'git clone git@github.com:lijoabraham44/nodejs-test.git'
     }
     stage('Build') {
-        sh 'cd nodejs-test'
-        sh '/usr/local/bin/docker build .'
+        sh '/usr/local/bin/docker build nodejs-test'
     }
     stage('Test') {
         echo 'Building....'
