@@ -4,7 +4,7 @@ node {
     }
     stage('Build') {
         sh 'ls -lrth'
-        sh '/usr/local/bin/docker build .'
+        sh '/usr/local/bin/docker build nodejs-test .'
     }
     stage('Test') {
         echo 'Building....'
