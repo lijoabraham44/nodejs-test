@@ -12,6 +12,6 @@ node {
         echo 'Building....'
     }
     stage('Deploy') {
-        sh '/usr/local/bin/docker run -d node-js-image'
+        sh '/usr/local/bin/docker run -d -p 9000:9000 node-js-image'
     }
 }
